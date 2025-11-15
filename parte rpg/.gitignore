@@ -1,0 +1,60 @@
+# --- Unity ---
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Mm]emoryCaptures/
+UserSettings/
+.vs/
+.vscode/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+*.db
+*.pidb.meta
+sysinfo.txt
+
+# Crash and build reports
+*.stackdump
+*.apk
+*.aab
+*.unitypackage
+
+# --- OS specific ---
+.DS_Store
+Thumbs.db
+
+# --- Rider / JetBrains ---
+.idea/
+*.iml
+
+# --- VSCode ---
+.vscode/
+.history/
+
+# --- Build Artifacts ---
+[Bb]in/
+[Rr]elease/
+[Dd]ebug/
+
+# --- Custom: keep Sprites ---
+# NO ignorar la carpeta Sprites (se sube completa)
+!Sprites/
+
+# --- Custom: keep important Unity folders ---
+!RPG Game/Assets/
+!RPG Game/ProjectSettings/
+!RPG Game/Packages/
