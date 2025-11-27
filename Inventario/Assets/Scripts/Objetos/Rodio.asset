@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Rodio
   m_EditorClassIdentifier: Assembly-CSharp::Plantilla_Objeto
   imagenObjeto: {fileID: -3247530389431423072, guid: 2c66ede6632663946aaddf97d613567c, type: 3}
+  imagenDescripcion: {fileID: -6946007662723423348, guid: c8fcc91aa3cf2ce43a10bcb0c28cd070, type: 3}
   cantidad: 0

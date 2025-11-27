@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Teneso
   m_EditorClassIdentifier: Assembly-CSharp::Plantilla_Objeto
   imagenObjeto: {fileID: -8481407721115811647, guid: 22c995236bc3a1641baad21a494d954b, type: 3}
+  imagenDescripcion: {fileID: -2707027179712975927, guid: 26b574da7ae4d5447be4675f09b106ed, type: 3}
   cantidad: 0

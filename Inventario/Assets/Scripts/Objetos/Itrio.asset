@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Itrio
   m_EditorClassIdentifier: Assembly-CSharp::Plantilla_Objeto
   imagenObjeto: {fileID: 2675466992823157447, guid: 93e2f700b8d5b014cadfbc2acf566f06, type: 3}
+  imagenDescripcion: {fileID: -3180619178420385107, guid: f3574fb242309a647bebd7ca34cac815, type: 3}
   cantidad: 0

@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Lantano
   m_EditorClassIdentifier: Assembly-CSharp::Plantilla_Objeto
   imagenObjeto: {fileID: 6709569043120363899, guid: 4b25ef5755852554ca0de59b22c11de4, type: 3}
+  imagenDescripcion: {fileID: -3606383029764839114, guid: 7773c0ccff0567d48a5004e7818a4a4e, type: 3}
   cantidad: 0

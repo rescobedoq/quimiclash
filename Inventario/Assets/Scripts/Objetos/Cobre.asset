@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Cobre
   m_EditorClassIdentifier: Assembly-CSharp::Plantilla_Objeto
   imagenObjeto: {fileID: 8736437045810136578, guid: 693b3c9b02ded644aa303d4bf85508b2, type: 3}
+  imagenDescripcion: {fileID: 5181654206020448988, guid: cb9cfbc7bf3f3b64f835b8902a3f1795, type: 3}
   cantidad: 0

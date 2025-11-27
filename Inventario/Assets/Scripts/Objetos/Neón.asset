@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: "Ne\xF3n"
   m_EditorClassIdentifier: Assembly-CSharp::Plantilla_Objeto
   imagenObjeto: {fileID: -4996191347356263723, guid: 49f0e53a42328374f86a801c6c4eddab, type: 3}
+  imagenDescripcion: {fileID: -5099292496197868168, guid: 8c5993d5661288248806dade27e6cc6b, type: 3}
   cantidad: 0

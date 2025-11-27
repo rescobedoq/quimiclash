@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Tecnesio
   m_EditorClassIdentifier: Assembly-CSharp::Plantilla_Objeto
   imagenObjeto: {fileID: 4771298098422601149, guid: fb50315bd19bf8143a8984af992ca282, type: 3}
+  imagenDescripcion: {fileID: -4004772778501413904, guid: a192727a54165674ba8ec3ad92406c06, type: 3}
   cantidad: 0

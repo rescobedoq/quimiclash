@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Kripton
   m_EditorClassIdentifier: Assembly-CSharp::Plantilla_Objeto
   imagenObjeto: {fileID: 4728756449198553965, guid: acad8c057ba029346ab0f3a977bf92dc, type: 3}
+  imagenDescripcion: {fileID: 3207579745489812468, guid: 0cf1fdb4b47ebfa4187ebbd70f731cd5, type: 3}
   cantidad: 0

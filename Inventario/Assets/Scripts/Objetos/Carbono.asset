@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Carbono
   m_EditorClassIdentifier: Assembly-CSharp::Plantilla_Objeto
   imagenObjeto: {fileID: 6385472871557696858, guid: e463b323f0b685a4aa34c7e711a62fd0, type: 3}
+  imagenDescripcion: {fileID: 3465286685962602723, guid: 7c73680e382075f43b2545671db3c0d8, type: 3}
   cantidad: 0

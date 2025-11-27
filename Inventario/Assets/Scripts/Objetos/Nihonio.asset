@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Nihonio
   m_EditorClassIdentifier: Assembly-CSharp::Plantilla_Objeto
   imagenObjeto: {fileID: 5523359021179811440, guid: 661afb49443fbca4697eb2fa634806b8, type: 3}
+  imagenDescripcion: {fileID: 1376466379556473284, guid: 35491e019918f7f409671f2643cc9f0d, type: 3}
   cantidad: 0

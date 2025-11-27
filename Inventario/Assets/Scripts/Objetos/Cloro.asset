@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Cloro
   m_EditorClassIdentifier: Assembly-CSharp::Plantilla_Objeto
   imagenObjeto: {fileID: -3225901745911952417, guid: 5bc5b439f6265a846a7281c611252e87, type: 3}
+  imagenDescripcion: {fileID: 6660783624410144326, guid: 3a39bc97892286d4ca82cb8ccdb662f3, type: 3}
   cantidad: 0

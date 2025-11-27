@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Estroncio
   m_EditorClassIdentifier: Assembly-CSharp::Plantilla_Objeto
   imagenObjeto: {fileID: -7441082669177451417, guid: f4e23380f6f499d4888bed1452a2e419, type: 3}
+  imagenDescripcion: {fileID: -2014771838305702419, guid: 97cc31bb33851314da1a8795cd633d71, type: 3}
   cantidad: 0

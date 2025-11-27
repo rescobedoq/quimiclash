@@ -628,7 +628,7 @@ GameObject:
   - component: {fileID: 615062136}
   m_Layer: 5
   m_Name: Informacion_Element
-  m_TagString: Untagged
+  m_TagString: DescripcionUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -672,7 +672,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 3247227581777817093, guid: aee0b9d8b8d30c5499a08d22f0eb1705, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2017,6 +2017,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Seleccionados
   objetoDeTabla: {fileID: 3107543970480748634, guid: b7f3fe3647e01fa478a6f8f7c6ccd7ba, type: 3}
+  imagenDescripcionUI: {fileID: 615062136}
   listaSeleccionados: []
 --- !u!1 &1943744637
 GameObject:
@@ -2211,6 +2212,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Seleccionados
   objetoDeTabla: {fileID: 3107543970480748634, guid: b7f3fe3647e01fa478a6f8f7c6ccd7ba, type: 3}
+  imagenDescripcionUI: {fileID: 615062136}
   listaSeleccionados: []
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

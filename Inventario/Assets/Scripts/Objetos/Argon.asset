@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Argon
   m_EditorClassIdentifier: Assembly-CSharp::Plantilla_Objeto
   imagenObjeto: {fileID: -6136451970960647, guid: 1edb43b44f895b74d95afb616b494d87, type: 3}
+  imagenDescripcion: {fileID: 2960402581040015946, guid: 3d236534ef170834bbbf86afa635bcad, type: 3}
   cantidad: 0

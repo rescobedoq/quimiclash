@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Mercurio
   m_EditorClassIdentifier: Assembly-CSharp::Plantilla_Objeto
   imagenObjeto: {fileID: 2997251058848575311, guid: 7294ac2b0d4459842957cfa97dc0571e, type: 3}
+  imagenDescripcion: {fileID: -2664783550769548753, guid: 71f5e18698e58a04abe52f9408709ea4, type: 3}
   cantidad: 0

@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Hidrogeno
   m_EditorClassIdentifier: Assembly-CSharp::Plantilla_Objeto
   imagenObjeto: {fileID: 4946045755788238400, guid: 3e420038851ebfa46be9af9a1cfca425, type: 3}
+  imagenDescripcion: {fileID: -855298285791758126, guid: 8247eb908f63d814cbcb5e1271aa2b18, type: 3}
   cantidad: 10

@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Bario
   m_EditorClassIdentifier: Assembly-CSharp::Plantilla_Objeto
   imagenObjeto: {fileID: 4941690801508342538, guid: 149d942300db5124cb61ade736e11c98, type: 3}
+  imagenDescripcion: {fileID: 7571068671740948714, guid: e3da73e2ab6766746bc9015eb58847b6, type: 3}
   cantidad: 0

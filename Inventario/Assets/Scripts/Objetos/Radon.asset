@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Radon
   m_EditorClassIdentifier: Assembly-CSharp::Plantilla_Objeto
   imagenObjeto: {fileID: -3003022848137620434, guid: aa5432ff817e19a48872177057bd5071, type: 3}
+  imagenDescripcion: {fileID: 3800202167116691454, guid: 4dea4ba03babd9d47a4bda606c70aec9, type: 3}
   cantidad: 0

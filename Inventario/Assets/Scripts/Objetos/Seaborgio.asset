@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Seaborgio
   m_EditorClassIdentifier: Assembly-CSharp::Plantilla_Objeto
   imagenObjeto: {fileID: -1146985976930576372, guid: 227d934b7edc2884ba69c8ece293d7b9, type: 3}
+  imagenDescripcion: {fileID: -2446285194140060024, guid: 347237241f0a43244ad6943e92f3af83, type: 3}
   cantidad: 0

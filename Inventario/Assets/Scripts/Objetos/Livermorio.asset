@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Livermorio
   m_EditorClassIdentifier: Assembly-CSharp::Plantilla_Objeto
   imagenObjeto: {fileID: -8440177044873061374, guid: c1f429eee9b092f43952ae4ddd63552d, type: 3}
+  imagenDescripcion: {fileID: -627346825840282070, guid: 2c59200c4a73f264eafa96d074d5120f, type: 3}
   cantidad: 0

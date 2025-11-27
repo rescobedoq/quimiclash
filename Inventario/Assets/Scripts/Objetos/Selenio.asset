@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Selenio
   m_EditorClassIdentifier: Assembly-CSharp::Plantilla_Objeto
   imagenObjeto: {fileID: 7082080829229629838, guid: 433e7d75c58eecb4fa7fa3e0a2517983, type: 3}
+  imagenDescripcion: {fileID: 3620510468529025383, guid: b3dc7d08ba7f82a44b3cbd6750eb077e, type: 3}
   cantidad: 0

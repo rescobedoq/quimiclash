@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Molibdeno
   m_EditorClassIdentifier: Assembly-CSharp::Plantilla_Objeto
   imagenObjeto: {fileID: -4267900036085780752, guid: d27b1b3e5c8432940b2935f3e2aaeef9, type: 3}
+  imagenDescripcion: {fileID: 7059393366267629080, guid: ac8f72bd82224d4458ba0148b68b2d53, type: 3}
   cantidad: 0

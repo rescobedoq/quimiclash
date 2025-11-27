@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Hafnio
   m_EditorClassIdentifier: Assembly-CSharp::Plantilla_Objeto
   imagenObjeto: {fileID: -1564817767872281909, guid: 89779ab5ae0377d4bb35984476eb2842, type: 3}
+  imagenDescripcion: {fileID: -3236048163448779655, guid: b0e520e206fd6b1419a4a4693a592557, type: 3}
   cantidad: 0

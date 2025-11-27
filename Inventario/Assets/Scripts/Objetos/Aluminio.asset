@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Aluminio
   m_EditorClassIdentifier: Assembly-CSharp::Plantilla_Objeto
   imagenObjeto: {fileID: -7703379112210886855, guid: 8fcc295f0509be24597dcd77b8405838, type: 3}
+  imagenDescripcion: {fileID: 8389134475083476877, guid: 19553675974094542ac8966d067afb4f, type: 3}
   cantidad: 0

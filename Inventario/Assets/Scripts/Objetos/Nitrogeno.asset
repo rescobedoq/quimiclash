@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Nitrogeno
   m_EditorClassIdentifier: Assembly-CSharp::Plantilla_Objeto
   imagenObjeto: {fileID: -6337870620529445776, guid: 2f25e4683e4f75d4d819aba23c90c718, type: 3}
+  imagenDescripcion: {fileID: 7028616704906629411, guid: 1b71ae39b75e09142aaebf62d4430689, type: 3}
   cantidad: 0

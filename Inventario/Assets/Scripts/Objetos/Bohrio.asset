@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Bohrio
   m_EditorClassIdentifier: Assembly-CSharp::Plantilla_Objeto
   imagenObjeto: {fileID: -564490847393883001, guid: 906a9d9e01cc6ca4887c7de8e21d653b, type: 3}
+  imagenDescripcion: {fileID: 8982626413702595610, guid: 3034672612c06f045ab313894295cd69, type: 3}
   cantidad: 0

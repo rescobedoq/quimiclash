@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Oro
   m_EditorClassIdentifier: Assembly-CSharp::Plantilla_Objeto
   imagenObjeto: {fileID: -6717436115693138904, guid: 072a28cada5f63747900a78103a7d21a, type: 3}
+  imagenDescripcion: {fileID: 5223280560187763028, guid: 6972d3584ea007c47bab2f2ec9b009f4, type: 3}
   cantidad: 0

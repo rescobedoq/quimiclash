@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Vanadio
   m_EditorClassIdentifier: Assembly-CSharp::Plantilla_Objeto
   imagenObjeto: {fileID: 6571175555233291505, guid: 94b713c817e64cb4292133b8e42a5ccf, type: 3}
+  imagenDescripcion: {fileID: 2720535173406242035, guid: d565fadc3587ae24a89982208c504853, type: 3}
   cantidad: 0

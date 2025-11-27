@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Bromo
   m_EditorClassIdentifier: Assembly-CSharp::Plantilla_Objeto
   imagenObjeto: {fileID: -6259679261786031772, guid: 6dac03e760ce37f47ab17172c8d61017, type: 3}
+  imagenDescripcion: {fileID: -164082725380277428, guid: 13b0c983073049e44b6026d84fba4cfd, type: 3}
   cantidad: 0

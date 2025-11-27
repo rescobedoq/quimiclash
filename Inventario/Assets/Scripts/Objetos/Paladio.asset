@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Paladio
   m_EditorClassIdentifier: Assembly-CSharp::Plantilla_Objeto
   imagenObjeto: {fileID: 806056468792033841, guid: 06aedbfb2286535498123705122e7920, type: 3}
+  imagenDescripcion: {fileID: -963791335356448533, guid: f9301007b411d464fb803cb81429635b, type: 3}
   cantidad: 0

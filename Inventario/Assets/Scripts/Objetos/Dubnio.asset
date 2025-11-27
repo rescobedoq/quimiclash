@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Dubnio
   m_EditorClassIdentifier: Assembly-CSharp::Plantilla_Objeto
   imagenObjeto: {fileID: 2604680440585516116, guid: 5e3c13e197023d34f9ad2f12bdaf52e2, type: 3}
+  imagenDescripcion: {fileID: 6460090415961922604, guid: 672f7325a5aa8534caf655970d7e3f62, type: 3}
   cantidad: 0

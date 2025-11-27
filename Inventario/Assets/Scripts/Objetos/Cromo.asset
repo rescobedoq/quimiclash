@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Cromo
   m_EditorClassIdentifier: Assembly-CSharp::Plantilla_Objeto
   imagenObjeto: {fileID: 7049303401743354971, guid: bca9cdf58b3804e42adf092aa52aae9c, type: 3}
+  imagenDescripcion: {fileID: 8102358098348255977, guid: 99557a4d80a6b22459d04a515e70a68c, type: 3}
   cantidad: 0

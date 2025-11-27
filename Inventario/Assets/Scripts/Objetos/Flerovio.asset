@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Flerovio
   m_EditorClassIdentifier: Assembly-CSharp::Plantilla_Objeto
   imagenObjeto: {fileID: 7472812019184922991, guid: 9320573b7c13f2f4886e2dc45983462c, type: 3}
+  imagenDescripcion: {fileID: 2059781735730985187, guid: 494f914c33cacc04ab8bdfb0856c5c90, type: 3}
   cantidad: 0

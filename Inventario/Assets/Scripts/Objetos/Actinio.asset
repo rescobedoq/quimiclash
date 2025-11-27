@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Actinio
   m_EditorClassIdentifier: Assembly-CSharp::Plantilla_Objeto
   imagenObjeto: {fileID: -8765773220279341082, guid: 13180fb87ce713349a7d7b605441cbeb, type: 3}
+  imagenDescripcion: {fileID: -9077199038371864319, guid: 11add0d73a9acc749aeb4b810ef326cd, type: 3}
   cantidad: 0

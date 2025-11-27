@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Silicio
   m_EditorClassIdentifier: Assembly-CSharp::Plantilla_Objeto
   imagenObjeto: {fileID: -712858246668597970, guid: 6a064167508ba5d469030686b6312cbb, type: 3}
+  imagenDescripcion: {fileID: -6270953770400647376, guid: 95b09aaadd3e0914f9937cdd11e4d8ff, type: 3}
   cantidad: 0

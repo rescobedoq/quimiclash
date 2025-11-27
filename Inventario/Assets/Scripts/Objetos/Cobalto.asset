@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Cobalto
   m_EditorClassIdentifier: Assembly-CSharp::Plantilla_Objeto
   imagenObjeto: {fileID: 1109675543871994529, guid: 12d2a55979aa217418b56b7a3b123981, type: 3}
+  imagenDescripcion: {fileID: -5622901713081898559, guid: c7d28822b90e8a24388bf7558799f6f1, type: 3}
   cantidad: 0

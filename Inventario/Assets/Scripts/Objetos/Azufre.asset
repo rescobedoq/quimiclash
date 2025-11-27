@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Azufre
   m_EditorClassIdentifier: Assembly-CSharp::Plantilla_Objeto
   imagenObjeto: {fileID: 4257629124494494334, guid: eab81ac8a135bea4295f31370059876f, type: 3}
+  imagenDescripcion: {fileID: 7680820834086852892, guid: 2d7ea6be24087b04c8e6050943d991d9, type: 3}
   cantidad: 0

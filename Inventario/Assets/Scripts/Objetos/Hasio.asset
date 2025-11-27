@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Hasio
   m_EditorClassIdentifier: Assembly-CSharp::Plantilla_Objeto
   imagenObjeto: {fileID: -4730433048048275854, guid: c9cd7ff216a4cca419e70b7db6179852, type: 3}
+  imagenDescripcion: {fileID: -4111228882293134515, guid: 1ae33aaf47060b449a16d733c0508de9, type: 3}
   cantidad: 0

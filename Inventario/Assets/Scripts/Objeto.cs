@@ -7,6 +7,8 @@ using TMPro;
 public class Objeto : MonoBehaviour
 {
     [SerializeField] Image imagenObjeto;
+    // AÑADIR: Referencia a la imagen de descripción
+    [SerializeField] Image imagenDescripcion;
 
     private Seleccionados seleccionados;
 
@@ -27,14 +29,37 @@ public class Objeto : MonoBehaviour
             // Mostrar la imagen normalmente
             imagenObjeto.sprite = datosObjeto.imagenObjeto;
             imagenObjeto.color = Color.white;
+        }
 
-
-
+        // AÑADIR: Configurar la imagen de descripción si existe
+        if (imagenDescripcion != null && datosObjeto.imagenDescripcion != null)
+        {
+            imagenDescripcion.sprite = datosObjeto.imagenDescripcion;
+            imagenDescripcion.color = Color.white;
+        }
+        else if (imagenDescripcion != null)
+        {
+            imagenDescripcion.color = Color.clear;
         }
     }
-     public void SeleccionarElementos()
+
+    public void SeleccionarElementos()
     {
         seleccionados.IncluirSeleccionados(gameObject);
-
+        MostrarDescripcion();
+    }
+    public void MostrarDescripcion()
+    {
+        DescripcionSeleccionada managerDescripcion = FindFirstObjectByType<DescripcionSeleccionada>();
+        if (managerDescripcion != null)
+        {
+            managerDescripcion.objetoOriginal = this;
+            managerDescripcion.MostrarDescripcion();
+        }
+    }
+    // AÑADIR: Método para obtener la descripción
+    public Sprite GetDescripcionSprite()
+    {
+        return imagenDescripcion != null ? imagenDescripcion.sprite : null;
     }
 }

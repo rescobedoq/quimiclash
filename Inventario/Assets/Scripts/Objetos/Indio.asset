@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Indio
   m_EditorClassIdentifier: Assembly-CSharp::Plantilla_Objeto
   imagenObjeto: {fileID: -334756956736838980, guid: 16d503160133d3641b67644459c1a307, type: 3}
+  imagenDescripcion: {fileID: -8586417740124189794, guid: 100ffe464ab03634996db25f8d694c13, type: 3}
   cantidad: 0

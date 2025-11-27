@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Polonio
   m_EditorClassIdentifier: Assembly-CSharp::Plantilla_Objeto
   imagenObjeto: {fileID: 349679775107238375, guid: f7730b1d94a067049bff1ebc67a755c4, type: 3}
+  imagenDescripcion: {fileID: 625262457086554381, guid: c4f8f52b675879447a63ff8e61581070, type: 3}
   cantidad: 0

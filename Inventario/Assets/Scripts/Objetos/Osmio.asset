@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Osmio
   m_EditorClassIdentifier: Assembly-CSharp::Plantilla_Objeto
   imagenObjeto: {fileID: -5581392842669847327, guid: 072c3eb8f806d2f48995215dd40d948c, type: 3}
+  imagenDescripcion: {fileID: 3811139775257118856, guid: 8d7e718159747104389d3ff8502dd926, type: 3}
   cantidad: 0

@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Tungsteno
   m_EditorClassIdentifier: Assembly-CSharp::Plantilla_Objeto
   imagenObjeto: {fileID: -2907120694115899838, guid: ce6f6a6acd676124ea52c49e0343b28f, type: 3}
+  imagenDescripcion: {fileID: -102480566709390014, guid: 855f0c9be51f9d04f9c07a34e15d694c, type: 3}
   cantidad: 0

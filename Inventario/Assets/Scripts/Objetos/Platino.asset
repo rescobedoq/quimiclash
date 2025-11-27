@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Platino
   m_EditorClassIdentifier: Assembly-CSharp::Plantilla_Objeto
   imagenObjeto: {fileID: 7498354708010418265, guid: f90e20ebdc9c82647b5508fb32813843, type: 3}
+  imagenDescripcion: {fileID: -3106506509227680175, guid: c91f2c3bd83fdc14d91a16a21247412c, type: 3}
   cantidad: 0

@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Hierro
   m_EditorClassIdentifier: Assembly-CSharp::Plantilla_Objeto
   imagenObjeto: {fileID: -3006150649799044841, guid: 0a9dff9305d44ae418ac2bac6a89635e, type: 3}
+  imagenDescripcion: {fileID: -1045133410153605164, guid: d6351e97cd8d59a4cbd5b600d58e7f5a, type: 3}
   cantidad: 0

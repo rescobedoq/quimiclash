@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Potasio
   m_EditorClassIdentifier: Assembly-CSharp::Plantilla_Objeto
   imagenObjeto: {fileID: 1561071371070408931, guid: ebdf11290ba97034da82ada2d2478b98, type: 3}
+  imagenDescripcion: {fileID: 7157561037332017152, guid: 68140bdb8b8c95d47bf4bed105118d93, type: 3}
   cantidad: 0

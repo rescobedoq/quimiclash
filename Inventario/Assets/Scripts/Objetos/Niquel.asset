@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Niquel
   m_EditorClassIdentifier: Assembly-CSharp::Plantilla_Objeto
   imagenObjeto: {fileID: 1685510470705091141, guid: 69abc70482ae735499d5071c116bc92b, type: 3}
+  imagenDescripcion: {fileID: -796155573255488767, guid: b5769e78fc8df9b4c96fae04d066256b, type: 3}
   cantidad: 0

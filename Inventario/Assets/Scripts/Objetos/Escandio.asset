@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Escandio
   m_EditorClassIdentifier: Assembly-CSharp::Plantilla_Objeto
   imagenObjeto: {fileID: 9141915979714722100, guid: fb0b126d7da44db4b95dd75697e91277, type: 3}
+  imagenDescripcion: {fileID: -5750353039905602045, guid: ac0d59fd1e5d34e44a94bfb640585197, type: 3}
   cantidad: 0

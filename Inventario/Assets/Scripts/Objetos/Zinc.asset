@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Zinc
   m_EditorClassIdentifier: Assembly-CSharp::Plantilla_Objeto
   imagenObjeto: {fileID: -9090370813170156947, guid: 19ddc5dcb087f6441abe144a5c5f0eff, type: 3}
+  imagenDescripcion: {fileID: -8038976213705442086, guid: 1f0e6378226fdd643838ea1b3e7c9617, type: 3}
   cantidad: 0

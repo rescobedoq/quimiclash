@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: "Fl\xFAor"
   m_EditorClassIdentifier: Assembly-CSharp::Plantilla_Objeto
   imagenObjeto: {fileID: -1218834658375200317, guid: 9cbd561ad9c73de429ee688765e956ab, type: 3}
+  imagenDescripcion: {fileID: 4113829005332862926, guid: e25143d673ad9ba4592d20f504cecdb8, type: 3}
   cantidad: 0

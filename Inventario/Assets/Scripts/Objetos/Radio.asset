@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Radio
   m_EditorClassIdentifier: Assembly-CSharp::Plantilla_Objeto
   imagenObjeto: {fileID: -8070686850402279387, guid: f96c5fd34b5958a4c8f12e9bf8bdb2b2, type: 3}
+  imagenDescripcion: {fileID: -5789677524543127715, guid: 12024ccb1377df548af18c4250c289ec, type: 3}
   cantidad: 0

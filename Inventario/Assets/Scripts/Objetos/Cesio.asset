@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Cesio
   m_EditorClassIdentifier: Assembly-CSharp::Plantilla_Objeto
   imagenObjeto: {fileID: 3376501622222312210, guid: b741c075b93a0bf45affc2038d106a03, type: 3}
+  imagenDescripcion: {fileID: -41970534257140035, guid: 408634e61f0c2fb4888e8c425ca4f769, type: 3}
   cantidad: 0

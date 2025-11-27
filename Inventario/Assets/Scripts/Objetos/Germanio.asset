@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Germanio
   m_EditorClassIdentifier: Assembly-CSharp::Plantilla_Objeto
   imagenObjeto: {fileID: -3607648910683867453, guid: a3438910936973d41b3e5da9708649a7, type: 3}
+  imagenDescripcion: {fileID: 5272401415994956661, guid: bd58f643d3bc381419b09b1404544604, type: 3}
   cantidad: 0

@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Talio
   m_EditorClassIdentifier: Assembly-CSharp::Plantilla_Objeto
   imagenObjeto: {fileID: 4717015107774781162, guid: 7e356aebca75d774280f4a9adad53e92, type: 3}
+  imagenDescripcion: {fileID: 5757751276978669553, guid: ad078b87d9ebb2e448780ee07f780909, type: 3}
   cantidad: 0

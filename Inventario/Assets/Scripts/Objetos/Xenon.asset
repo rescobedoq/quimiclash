@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Xenon
   m_EditorClassIdentifier: Assembly-CSharp::Plantilla_Objeto
   imagenObjeto: {fileID: 7177754771116249098, guid: d03183d0509072446839f6fccb460b26, type: 3}
+  imagenDescripcion: {fileID: 3301111849194120939, guid: c3505a130c36cb04c8539018048e2926, type: 3}
   cantidad: 0

@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Renio
   m_EditorClassIdentifier: Assembly-CSharp::Plantilla_Objeto
   imagenObjeto: {fileID: 2684338054880141768, guid: 8d6dda232fbb5f3448c35a7826ce93db, type: 3}
+  imagenDescripcion: {fileID: 8975557439242265801, guid: 5d1a9427d07869343b919ecc2a7075c1, type: 3}
   cantidad: 0

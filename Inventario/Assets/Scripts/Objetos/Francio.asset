@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Francio
   m_EditorClassIdentifier: Assembly-CSharp::Plantilla_Objeto
   imagenObjeto: {fileID: -450431201783195087, guid: 3e12e7b65cc99be49b24d274d60443ca, type: 3}
+  imagenDescripcion: {fileID: -470884732477857976, guid: 5305f4635ec944e43bdaaa3ce7e66812, type: 3}
   cantidad: 0

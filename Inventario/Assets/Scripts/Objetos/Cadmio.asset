@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Cadmio
   m_EditorClassIdentifier: Assembly-CSharp::Plantilla_Objeto
   imagenObjeto: {fileID: -2673170823505207737, guid: e8f19c719b5d20e4498c670ab402367a, type: 3}
+  imagenDescripcion: {fileID: 1446792919685844086, guid: 9515deda283cc8c48b2ddb87d425e02c, type: 3}
   cantidad: 0

@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Calcio
   m_EditorClassIdentifier: Assembly-CSharp::Plantilla_Objeto
   imagenObjeto: {fileID: 4279794466288894848, guid: 8b21f8755950ec44c9812e7131903d23, type: 3}
+  imagenDescripcion: {fileID: 4164744761163438241, guid: f809d8e03a0e8324ba8b2ce0c160b375, type: 3}
   cantidad: 0

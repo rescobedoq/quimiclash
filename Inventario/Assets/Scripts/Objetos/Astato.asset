@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Astato
   m_EditorClassIdentifier: Assembly-CSharp::Plantilla_Objeto
   imagenObjeto: {fileID: 8400805599642304877, guid: 83a9fd39e64461d488dc5fdc5328e933, type: 3}
+  imagenDescripcion: {fileID: -6910697209631215935, guid: 6acef2c8fdae19044b560bfc9e1c1620, type: 3}
   cantidad: 0

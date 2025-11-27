@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Rutenio
   m_EditorClassIdentifier: Assembly-CSharp::Plantilla_Objeto
   imagenObjeto: {fileID: -7055808758202362777, guid: 7c10b685d2a597b42a5e561ec7ecaf71, type: 3}
+  imagenDescripcion: {fileID: -2947526863502713391, guid: c2b0183f2a42cff478d86dd91baafe2e, type: 3}
   cantidad: 0

@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Magnesio
   m_EditorClassIdentifier: Assembly-CSharp::Plantilla_Objeto
   imagenObjeto: {fileID: 4211550745189351483, guid: adb4181feba942c4790a213f0184154d, type: 3}
+  imagenDescripcion: {fileID: -1540426309290004842, guid: 1009045070dffd44d856e7bc83f71f0d, type: 3}
   cantidad: 0

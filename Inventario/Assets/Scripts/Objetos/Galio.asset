@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Galio
   m_EditorClassIdentifier: Assembly-CSharp::Plantilla_Objeto
   imagenObjeto: {fileID: -3795247843901442913, guid: 91f010e69c538024a809b5a4fe4d9632, type: 3}
+  imagenDescripcion: {fileID: -30749221642623036, guid: 0cd08dee486097645b591d4cc1f1efb1, type: 3}
   cantidad: 0

@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Manganeso
   m_EditorClassIdentifier: Assembly-CSharp::Plantilla_Objeto
   imagenObjeto: {fileID: -7108662662236530862, guid: 7dc81394276e9624dbef461a2f8be500, type: 3}
+  imagenDescripcion: {fileID: 6894999169920593895, guid: 7c1c76ae7d83b9f448d694bff294beec, type: 3}
   cantidad: 0

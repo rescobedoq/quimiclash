@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Iridio
   m_EditorClassIdentifier: Assembly-CSharp::Plantilla_Objeto
   imagenObjeto: {fileID: 7493070745267198842, guid: 07baa341168a24848af4c4752f136576, type: 3}
+  imagenDescripcion: {fileID: 7965088197702528346, guid: d8cecf5bf3682864d975aebc584f456c, type: 3}
   cantidad: 0

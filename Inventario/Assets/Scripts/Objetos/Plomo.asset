@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Plomo
   m_EditorClassIdentifier: Assembly-CSharp::Plantilla_Objeto
   imagenObjeto: {fileID: -1505769676072787800, guid: 684fa4b8ecd019a4cbe819769f444ad1, type: 3}
+  imagenDescripcion: {fileID: -1635963809266141271, guid: ca05b9815745fcb46a1b4061bd5afa8c, type: 3}
   cantidad: 0

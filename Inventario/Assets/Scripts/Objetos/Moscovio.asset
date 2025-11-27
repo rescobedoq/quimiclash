@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Moscovio
   m_EditorClassIdentifier: Assembly-CSharp::Plantilla_Objeto
   imagenObjeto: {fileID: 3638186036370582302, guid: 744f8a4cc5c98284bb05878bc895f030, type: 3}
+  imagenDescripcion: {fileID: -2920359113916870920, guid: 30db82fc90fcf864c9c454658ac1b158, type: 3}
   cantidad: 0

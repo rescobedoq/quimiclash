@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Sodio
   m_EditorClassIdentifier: Assembly-CSharp::Plantilla_Objeto
   imagenObjeto: {fileID: -1802889521043128142, guid: 9f8193dae2faee94eaa6712eb336b1a6, type: 3}
+  imagenDescripcion: {fileID: -2966200626249415253, guid: f8ca393f8b05fc84da9364f8d536d634, type: 3}
   cantidad: 10

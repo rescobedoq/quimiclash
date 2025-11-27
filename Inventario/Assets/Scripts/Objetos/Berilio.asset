@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Berilio
   m_EditorClassIdentifier: Assembly-CSharp::Plantilla_Objeto
   imagenObjeto: {fileID: 3573605615878332435, guid: e4238e2a1d7a38e4bb82bc9b5f4243b7, type: 3}
+  imagenDescripcion: {fileID: -4178046375966092550, guid: f64af844fa2b717419b73e734f4d67f0, type: 3}
   cantidad: 0

@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Oganeson
   m_EditorClassIdentifier: Assembly-CSharp::Plantilla_Objeto
   imagenObjeto: {fileID: -4481283259585887876, guid: e439e12bb22112a4d923e33be9881bd3, type: 3}
+  imagenDescripcion: {fileID: 7563334469246092647, guid: 0c36ce32a298ea54b9222dd2ad21b86c, type: 3}
   cantidad: 0

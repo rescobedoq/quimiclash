@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Copernicio
   m_EditorClassIdentifier: Assembly-CSharp::Plantilla_Objeto
   imagenObjeto: {fileID: 9036758569578807310, guid: 400e0cbb17c8a854f9b53def797736ab, type: 3}
+  imagenDescripcion: {fileID: 8950671513123133910, guid: 7120315b4dd702142ae84b3b675754d2, type: 3}
   cantidad: 0

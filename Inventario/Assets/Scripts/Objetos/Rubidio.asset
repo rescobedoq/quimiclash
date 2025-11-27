@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Rubidio
   m_EditorClassIdentifier: Assembly-CSharp::Plantilla_Objeto
   imagenObjeto: {fileID: 8077632877032603624, guid: 3de30ce29b3eed74b8e6f525edbbf602, type: 3}
+  imagenDescripcion: {fileID: -8712778243190278716, guid: c93ed84834069e944901e5e84f12553a, type: 3}
   cantidad: 0

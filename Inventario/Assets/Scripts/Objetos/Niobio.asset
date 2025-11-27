@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Niobio
   m_EditorClassIdentifier: Assembly-CSharp::Plantilla_Objeto
   imagenObjeto: {fileID: -5615325359032741004, guid: 6bea8ddab37ae604d873e0bb1efceef6, type: 3}
+  imagenDescripcion: {fileID: -8419024768148562069, guid: e3bd19b17fce41547aa384c0b104b415, type: 3}
   cantidad: 0

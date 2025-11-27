@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: "Esta\xF1o"
   m_EditorClassIdentifier: Assembly-CSharp::Plantilla_Objeto
   imagenObjeto: {fileID: -3018274451127750886, guid: 4efd36f787e982e47b17835607b37d7d, type: 3}
+  imagenDescripcion: {fileID: -1783808350427418317, guid: 0b7a9f8e8ec527c4bb0bad4f6eeee828, type: 3}
   cantidad: 0

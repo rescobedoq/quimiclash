@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Antimonio
   m_EditorClassIdentifier: Assembly-CSharp::Plantilla_Objeto
   imagenObjeto: {fileID: -3696283113735510578, guid: 26b49e38b1cb08b429dffd7047bbb0ae, type: 3}
+  imagenDescripcion: {fileID: 281652535026622303, guid: 86da2cc80657d8c458078675cfc5d3d6, type: 3}
   cantidad: 0

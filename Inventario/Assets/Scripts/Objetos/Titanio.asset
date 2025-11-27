@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Titanio
   m_EditorClassIdentifier: Assembly-CSharp::Plantilla_Objeto
   imagenObjeto: {fileID: 2914124983809848308, guid: db9bd47b8abee044c8d7cd8eff6060b2, type: 3}
+  imagenDescripcion: {fileID: -7371509505491802261, guid: 11a18e98057dcd942a1fd706d433ba5c, type: 3}
   cantidad: 0

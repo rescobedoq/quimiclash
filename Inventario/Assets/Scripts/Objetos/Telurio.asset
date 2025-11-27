@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Telurio
   m_EditorClassIdentifier: Assembly-CSharp::Plantilla_Objeto
   imagenObjeto: {fileID: 7823006032278364901, guid: 5ef29ad92ad433848a2c4cba1cb08675, type: 3}
+  imagenDescripcion: {fileID: -1485282433491618599, guid: 03556e84837648447be1c5261dece593, type: 3}
   cantidad: 0

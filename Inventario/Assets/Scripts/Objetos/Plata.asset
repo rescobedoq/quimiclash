@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Plata
   m_EditorClassIdentifier: Assembly-CSharp::Plantilla_Objeto
   imagenObjeto: {fileID: 2475369603005383444, guid: 3714ded24ab15114d8747f88788a6e8f, type: 3}
+  imagenDescripcion: {fileID: 9108365968018652678, guid: fa332e9e89b37294a830833f18277f98, type: 3}
   cantidad: 0

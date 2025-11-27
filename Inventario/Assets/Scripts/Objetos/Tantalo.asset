@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Tantalo
   m_EditorClassIdentifier: Assembly-CSharp::Plantilla_Objeto
   imagenObjeto: {fileID: -261702710848739801, guid: 0276c626a7f4f094c9ece53288bc5d18, type: 3}
+  imagenDescripcion: {fileID: 1339047737661862774, guid: bfeb54dc94a68654f82c6a96796006e4, type: 3}
   cantidad: 0

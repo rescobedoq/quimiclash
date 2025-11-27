@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Litio
   m_EditorClassIdentifier: Assembly-CSharp::Plantilla_Objeto
   imagenObjeto: {fileID: 6854963846377988996, guid: f5423249e05a40a44b5c9542c72ebaf8, type: 3}
+  imagenDescripcion: {fileID: -6470460504253458178, guid: 133cf38af16847e4fa154dd8513d2e5e, type: 3}
   cantidad: 10

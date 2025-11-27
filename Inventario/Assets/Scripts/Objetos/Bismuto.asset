@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Bismuto
   m_EditorClassIdentifier: Assembly-CSharp::Plantilla_Objeto
   imagenObjeto: {fileID: 2012669659019107159, guid: 1bf4c0b7599b1de4288d1a4935a0ec56, type: 3}
+  imagenDescripcion: {fileID: 2034566960907004412, guid: a6f6116a045d9184c9a6d334d93e7160, type: 3}
   cantidad: 0

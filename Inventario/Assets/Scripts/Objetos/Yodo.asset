@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Yodo
   m_EditorClassIdentifier: Assembly-CSharp::Plantilla_Objeto
   imagenObjeto: {fileID: 4999403100297495058, guid: a448fb9e284e4e74a97dffa38dc97373, type: 3}
+  imagenDescripcion: {fileID: 5379824893481949807, guid: d13981bb03441484094b89da00f29a63, type: 3}
   cantidad: 0

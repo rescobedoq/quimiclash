@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Boro
   m_EditorClassIdentifier: Assembly-CSharp::Plantilla_Objeto
   imagenObjeto: {fileID: 7203338126045922378, guid: b0abe68d94b091549968e15c1d9b536c, type: 3}
+  imagenDescripcion: {fileID: 4130640169021434097, guid: 6cf0f3c59a66a264ab0ccbcfd54abdb0, type: 3}
   cantidad: 0

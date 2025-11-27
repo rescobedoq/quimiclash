@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Helio
   m_EditorClassIdentifier: Assembly-CSharp::Plantilla_Objeto
   imagenObjeto: {fileID: 6236217430153940903, guid: a2967f40e427a304e8477433ad258851, type: 3}
+  imagenDescripcion: {fileID: 6937817954938267909, guid: f1dba5c229f270c43ab688a0258ecb54, type: 3}
   cantidad: 0

@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Meitnerio
   m_EditorClassIdentifier: Assembly-CSharp::Plantilla_Objeto
   imagenObjeto: {fileID: 7292550865627231499, guid: e7867d6ce14337f4e912ebeb28ba20e6, type: 3}
+  imagenDescripcion: {fileID: 4622708640774792406, guid: f20c4f738bb403a41bb50fc02db70dab, type: 3}
   cantidad: 0

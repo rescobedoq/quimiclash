@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Rutherfordio
   m_EditorClassIdentifier: Assembly-CSharp::Plantilla_Objeto
   imagenObjeto: {fileID: 5354053187090831790, guid: fed33674da4606d4b8b1b6c52214ab87, type: 3}
+  imagenDescripcion: {fileID: 5953923354035733431, guid: eece179b6e3e55445b9abfab01c954fc, type: 3}
   cantidad: 0

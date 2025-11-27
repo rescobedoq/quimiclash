@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Tabla_periodica
   - Elementos_select
+  - DescripcionUI
   layers:
   - Default
   - TransparentFX

@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: "Ars\xE9nico"
   m_EditorClassIdentifier: Assembly-CSharp::Plantilla_Objeto
   imagenObjeto: {fileID: 8235795045821095420, guid: 64666b266b3237a4bb52fe12d0cb9323, type: 3}
+  imagenDescripcion: {fileID: -4093987921198194536, guid: b8abb7e7e0138cb40882b67167a63745, type: 3}
   cantidad: 0

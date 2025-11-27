@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Circonio
   m_EditorClassIdentifier: Assembly-CSharp::Plantilla_Objeto
   imagenObjeto: {fileID: 5857542481175478858, guid: 856cebcf52f7da44ba68e03636f90d9e, type: 3}
+  imagenDescripcion: {fileID: 1192843865154028290, guid: 196b91e49292d5640a42616f00bdc56c, type: 3}
   cantidad: 0
