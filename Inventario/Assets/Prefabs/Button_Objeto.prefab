@@ -67,7 +67,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 4946045755788238400, guid: 3e420038851ebfa46be9af9a1cfca425, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -90,6 +90,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Objecto
   imagenObjeto: {fileID: 8004290712753002290}
+  imagenDescripcion: {fileID: 0}
 --- !u!114 &-2830602684930543169
 MonoBehaviour:
   m_ObjectHideFlags: 0

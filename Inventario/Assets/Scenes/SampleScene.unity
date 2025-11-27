@@ -2017,6 +2017,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Seleccionados
   objetoDeTabla: {fileID: 3107543970480748634, guid: b7f3fe3647e01fa478a6f8f7c6ccd7ba, type: 3}
+  listaSeleccionados: []
 --- !u!1 &1943744637
 GameObject:
   m_ObjectHideFlags: 0
@@ -2210,6 +2211,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Seleccionados
   objetoDeTabla: {fileID: 3107543970480748634, guid: b7f3fe3647e01fa478a6f8f7c6ccd7ba, type: 3}
+  listaSeleccionados: []
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

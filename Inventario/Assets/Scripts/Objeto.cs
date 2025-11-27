@@ -27,10 +27,14 @@ public class Objeto : MonoBehaviour
             // Mostrar la imagen normalmente
             imagenObjeto.sprite = datosObjeto.imagenObjeto;
             imagenObjeto.color = Color.white;
+
+
+
         }
     }
      public void SeleccionarElementos()
     {
-        seleccionados.IncluirSeleccionados(imagenObjeto);
+        seleccionados.IncluirSeleccionados(gameObject);
+
     }
 }
