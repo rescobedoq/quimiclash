@@ -8,13 +8,95 @@ public class Seleccionados : MonoBehaviour
     [SerializeField] Image imagenDescripcionUI;
     private int numeroMaximoObjetos = 0;
 
-
     public List<Objeto> listaSeleccionados = new List<Objeto>();
+    public List<Plantilla_Objeto> listaSeleccionadosPlantillas = new List<Plantilla_Objeto>();
 
+    void Start()
+    {
+        // Al iniciar en cualquier escena, recuperar las plantillas persistidas
+        if (PersistenteSeleccionados.Instance != null)
+        {
+            listaSeleccionadosPlantillas = new List<Plantilla_Objeto>(
+                PersistenteSeleccionados.Instance.listaPersistida
+            );
+
+            // También actualizar el contador
+            numeroMaximoObjetos = PersistenteSeleccionados.Instance.numeroMaximoObjetosPersistido;
+
+            // Reconstruir UI solo con plantillas
+            ReconstruirUIDesdePlantillas();
+
+            Debug.Log("Seleccionados Start - Lista persistida recuperada: " + listaSeleccionadosPlantillas.Count);
+        }
+    }
+
+    // MÉTODO NUEVO: Guardar antes de cambiar escena
+    public void GuardarAntesDeCambioEscena()
+    {
+        Debug.Log("Guardando antes de cambio de escena...");
+        GuardarSeleccionadosEnPersistente();
+
+        if (PersistenteSeleccionados.Instance != null)
+        {
+            Debug.Log("Elementos guardados en persistente: " +
+                      PersistenteSeleccionados.Instance.listaPersistida.Count);
+        }
+    }
+
+    void OnDestroy()
+    {
+        if (PersistenteSeleccionados.Instance != null)
+        {
+            PersistenteSeleccionados.Instance.listaPersistida =
+                new List<Plantilla_Objeto>(listaSeleccionadosPlantillas);
+        }
+    }
+
+    void ReconstruirUI()
+    {
+        // Limpiar la UI actual
+        Transform parent = GameObject.FindGameObjectWithTag("Elementos_select").transform;
+        foreach (Transform child in parent)
+        {
+            Destroy(child.gameObject);
+        }
+
+        // Recrear los objetos en la UI basado en la lista persistida
+        foreach (Objeto obj in listaSeleccionados)
+        {
+            if (obj != null)
+            {
+                GameObject elemento = Instantiate(
+                    objetoDeTabla,
+                    Vector2.zero,
+                    Quaternion.identity,
+                    parent
+                );
+
+                Image imagen = elemento.GetComponent<Image>();
+                if (obj.GetComponent<Image>() != null)
+                {
+                    imagen.sprite = obj.GetComponent<Image>().sprite;
+                }
+
+                BotonSeleccionado boton = elemento.GetComponent<BotonSeleccionado>();
+                if (boton != null)
+                {
+                    boton.objetoOriginal = obj;
+                }
+
+                DescripcionSeleccionada descComp = elemento.GetComponent<DescripcionSeleccionada>();
+                if (descComp != null)
+                {
+                    descComp.objetoOriginal = obj;
+                }
+            }
+        }
+    }
 
     public void IncluirSeleccionados(GameObject objetoGO)
     {
-        Objeto obj = objetoGO.GetComponent<Objeto>(); 
+        Objeto obj = objetoGO.GetComponent<Objeto>();
 
         if (obj == null)
         {
@@ -33,11 +115,16 @@ public class Seleccionados : MonoBehaviour
         if (numeroMaximoObjetos < 8)
         {
             numeroMaximoObjetos++;
-
-
             listaSeleccionados.Add(obj);
 
-     
+            // AÑADIR: Guardar también en listaSeleccionadosPlantillas
+            if (obj.plantillaOrigen != null)
+            {
+                listaSeleccionadosPlantillas.Add(obj.plantillaOrigen);
+            }
+
+            GuardarSeleccionadosEnPersistente();
+
             GameObject elemento = Instantiate(
                 objetoDeTabla,
                 Vector2.zero,
@@ -57,22 +144,46 @@ public class Seleccionados : MonoBehaviour
             {
                 descComp.objetoOriginal = obj;
             }
-
         }
     }
 
-
     public void QuitarSeleccionado(BotonSeleccionado boton)
     {
-        if (listaSeleccionados.Contains(boton.objetoOriginal))
-            listaSeleccionados.Remove(boton.objetoOriginal);
+        Debug.Log("Quitando seleccionado...");
+
+        if (boton.objetoOriginal != null)
+        {
+            // Remover de listaSeleccionados
+            if (listaSeleccionados.Contains(boton.objetoOriginal))
+            {
+                listaSeleccionados.Remove(boton.objetoOriginal);
+                Debug.Log("Removido de listaSeleccionados");
+            }
+
+            // Remover de listaSeleccionadosPlantillas
+            if (boton.objetoOriginal.plantillaOrigen != null)
+            {
+                // Buscar y remover la primera ocurrencia de esta plantilla
+                int index = listaSeleccionadosPlantillas.IndexOf(boton.objetoOriginal.plantillaOrigen);
+                if (index >= 0)
+                {
+                    listaSeleccionadosPlantillas.RemoveAt(index);
+                    Debug.Log("Removido de listaSeleccionadosPlantillas");
+                }
+            }
+        }
 
         Destroy(boton.gameObject);
-
         numeroMaximoObjetos--;
         if (numeroMaximoObjetos < 0) numeroMaximoObjetos = 0;
+
+        // IMPORTANTE: Actualizar la lista persistente después de remover
+        GuardarSeleccionadosEnPersistente();
+
+        Debug.Log("Después de quitar - listaSeleccionados: " + listaSeleccionados.Count +
+                  ", listaSeleccionadosPlantillas: " + listaSeleccionadosPlantillas.Count);
     }
-    // AÑADIR: Método para mostrar descripción
+
     public void MostrarSeleccionado(DescripcionSeleccionada descripcion)
     {
         Debug.Log("1. MostrarSeleccionado llamado");
@@ -103,7 +214,6 @@ public class Seleccionados : MonoBehaviour
         }
     }
 
-    // AÑADIR: Método auxiliar para encontrar la plantilla
     private Plantilla_Objeto FindPlantillaByObjeto(Objeto obj)
     {
         // Busca directamente en todos los ScriptableObjects de Plantilla_Objeto
@@ -119,4 +229,56 @@ public class Seleccionados : MonoBehaviour
         return null;
     }
 
+    public void GuardarSeleccionadosEnPersistente()
+    {
+        if (PersistenteSeleccionados.Instance == null)
+        {
+            Debug.LogError("No hay instancia persistente para guardar");
+            return;
+        }
+
+        // Limpiar y rellenar la lista persistente
+        PersistenteSeleccionados.Instance.listaPersistida.Clear();
+
+        // Guardar desde listaSeleccionadosPlantillas que es más confiable
+        foreach (Plantilla_Objeto plantilla in listaSeleccionadosPlantillas)
+        {
+            if (plantilla != null)
+            {
+                PersistenteSeleccionados.Instance.listaPersistida.Add(plantilla);
+            }
+        }
+
+        PersistenteSeleccionados.Instance.numeroMaximoObjetosPersistido = numeroMaximoObjetos;
+
+        Debug.Log("Lista de seleccionados guardada en persistente. Elementos: " +
+                  PersistenteSeleccionados.Instance.listaPersistida.Count);
+    }
+
+    void ReconstruirUIDesdePlantillas()
+    {
+        Transform parent = GameObject.FindGameObjectWithTag("Elementos_select").transform;
+
+        foreach (Transform child in parent)
+            Destroy(child.gameObject);
+
+        foreach (Plantilla_Objeto plantilla in listaSeleccionadosPlantillas)
+        {
+            if (plantilla == null) continue;
+
+            GameObject elemento = Instantiate(
+                objetoDeTabla,
+                Vector2.zero,
+                Quaternion.identity,
+                parent
+            );
+
+            Image imagen = elemento.GetComponent<Image>();
+            if (imagen != null)
+            {
+                imagen.sprite = plantilla.imagenObjeto;
+                imagen.color = Color.white;
+            }
+        }
+    }
 }

@@ -3,14 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.EventSystems;
 
-public class Objeto : MonoBehaviour
+public class Objeto : MonoBehaviour , IPointerEnterHandler, IPointerExitHandler 
 {
     [SerializeField] Image imagenObjeto;
     // AÑADIR: Referencia a la imagen de descripción
     [SerializeField] Image imagenDescripcion;
 
     private Seleccionados seleccionados;
+    public Plantilla_Objeto plantillaOrigen;
+
+
+
 
     private void Awake()
     {
@@ -19,6 +24,7 @@ public class Objeto : MonoBehaviour
 
     public void CrearObjeto(Plantilla_Objeto datosObjeto)
     {
+        plantillaOrigen = datosObjeto;
         if (datosObjeto.imagenObjeto == null)
         {
             // Hacer transparente el Image
@@ -58,8 +64,19 @@ public class Objeto : MonoBehaviour
         }
     }
     // AÑADIR: Método para obtener la descripción
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        MostrarDescripcion();
+    }
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        // Opcional: Ocultar descripción al salir
+    }
+
     public Sprite GetDescripcionSprite()
     {
         return imagenDescripcion != null ? imagenDescripcion.sprite : null;
     }
+
 }
