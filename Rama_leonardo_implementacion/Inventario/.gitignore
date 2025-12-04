@@ -1,0 +1,62 @@
+# ================= Unity generated folders =================
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Mm]emoryCaptures/
+UserSettings/
+Recordings/
+
+# ================= Visual Studio / Rider =================
+.vs/
+.idea/
+.gradle/
+*.csproj
+*.sln
+*.user
+*.userprefs
+*.pidb
+*.unityproj
+*.suo
+*.tmp
+*.booproj
+
+# ================= Cache and generated files =================
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+sysinfo.txt
+
+# ================= TextMesh Pro =================
+TextMesh Pro/Fonts/
+TextMesh Pro/Resources/Font Assets/
+
+# ================= Crash reports =================
+*.stacktrace
+
+# ================= Build artifacts =================
+*.apk
+*.aab
+*.xcodeproj
+*.xcworkspace
+*.xcuserstate
+*.ipa
+*.exe
+*.app
+
+# ================= System files =================
+.DS_Store
+Thumbs.db
+
+# ================= Unity packages =================
+/Packages/com.unity.collab-proxy/
+**/AssetStoreTools*
+
+# ================= FMOD generated =================
+FMODStudioCache/
+
+# ================= Plastic SCM =================
+.plastic/
