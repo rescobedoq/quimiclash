@@ -75,7 +75,31 @@ public class PlayerHealth : MonoBehaviour
 
     public void ChangeHealth(int amount)
     {
+        // SI ES DAÑO (número negativo)
+        if (amount < 0)
+        {
+            // Calculamos defensa total (Estadística base + Armadura equipada)
+            int totalDefense = defense + armorPower;
+
+            Debug.Log($"Recibiendo daño base: {amount}. Defensa total: {totalDefense}");
+
+            // Mitigamos el daño.
+            // Matemáticas: Si daño es -20 y defensa es 5 -> -20 + 5 = -15
+            amount += totalDefense;
+
+            // Evitamos curarnos si la defensa es mayor al daño
+            // Si daño es -5 y defensa 10 -> -5 + 10 = +5 (curación). Esto lo evita:
+            if (amount > 0) 
+            {
+                amount = 0; 
+                Debug.Log("¡Ataque bloqueado completamente!");
+            }
+        }
+
         currentHealth += amount;
+
+        // Actualizar UI si tienes barra de vida del jugador aquí...
+        Debug.Log($"Vida actual: {currentHealth}/{maxHealth}");
 
         if (currentHealth <= 0)
         {

@@ -36,6 +36,13 @@ public class PlayerMovement : MonoBehaviour
 
         HandleMovement();
         HandleAttack();
+        // PRUEBA TEMPORAL
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            // Necesitas tener un Item creado en tus carpetas para probar esto
+            // Por ahora solo veremos el mensaje en consola
+            Debug.Log("El sistema de inventario está activo y escuchando.");
+        }
     }
 
     private void HandleMovement()

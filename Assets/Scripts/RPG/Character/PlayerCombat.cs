@@ -16,10 +16,12 @@ public class PlayerCombat : MonoBehaviour
     private float timer;
 
     private PlayerMovement playerMovement;
+    private PlayerHealth playerStats; // <--- 1. NUEVA REFERENCIA
 
     private void Start()
     {
         playerMovement = GetComponent<PlayerMovement>();
+        playerStats = GetComponent<PlayerHealth>(); // <--- 2. OBTENER COMPONENTE
     }
 
     private void Update()
@@ -35,17 +37,28 @@ public class PlayerCombat : MonoBehaviour
         if (timer <= 0)
         {
             anim.SetBool("isAttacking", true);
-
             timer = cooldownBetweenAttacks;
 
-            // Congela el movimiento mientras dura la animación
             if (playerMovement != null)
                 StartCoroutine(FreezeMovementDuringAttack());
         }
     }
+
     public void dealDamage()
     {
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, weaponRange, enemyLayers);
+
+        // <--- 3. CALCULO DEL DAÑO TOTAL --->
+        int totalDamage = attackDamage;
+        
+        if (playerStats != null)
+        {
+            // Sumamos daño base + fuerza del personaje + poder del arma equipada
+            totalDamage += playerStats.strength + playerStats.weaponPower;
+        }
+        
+        Debug.Log("Golpeando con daño TOTAL: " + totalDamage);
+        // <--------------------------------->
 
         foreach (Collider2D enemy in hitEnemies)
         {
@@ -54,7 +67,8 @@ public class PlayerCombat : MonoBehaviour
 
             if (enemyHealth != null)
             {
-                enemyHealth.ChangeHealth(-attackDamage);
+                // USAMOS totalDamage EN LUGAR DE attackDamage
+                enemyHealth.ChangeHealth(-totalDamage);
             }
             else
             {
@@ -76,22 +90,17 @@ public class PlayerCombat : MonoBehaviour
     {
         if (playerMovement == null) yield break;
 
-        // Desactiva movimiento
         playerMovement.CanMove = false;
-
-        // Espera hasta que termine la animación
         yield return new WaitForSeconds(anim.GetCurrentAnimatorStateInfo(0).length);
-
-        // 🔓 Reactiva movimiento
         playerMovement.CanMove = true;
         anim.SetBool("isAttacking", false);
     }
-
 
     public void StopAttack()
     {
         anim.SetBool("isAttacking", false); 
     }
+
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
