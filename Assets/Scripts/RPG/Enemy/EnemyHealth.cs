@@ -8,20 +8,20 @@ public class EnemyHealth : MonoBehaviour
     public int currentHealth;
 
     [Header("UI Reference")]
-    public Slider healthSlider; // Arrastra aquí el "HealthSlider" en el inspector
+    public Slider healthSlider; // Arrastra aquï¿½ el "HealthSlider" en el inspector
     public GameObject healthBarCanvas; // Opcional: para ocultar la barra si muere
 
     private void Start()
     {
         currentHealth = maxHealth;
 
-        // Configuración inicial del slider
+        // Configuraciï¿½n inicial del slider
         if (healthSlider != null)
         {
             healthSlider.maxValue = maxHealth;
             healthSlider.value = currentHealth;
 
-            // Opcional: Ocultar la barra si la vida está llena para no saturar la pantalla
+            // Opcional: Ocultar la barra si la vida estï¿½ llena para no saturar la pantalla
             //healthBarCanvas.SetActive(false); 
         }
     }
@@ -41,7 +41,7 @@ public class EnemyHealth : MonoBehaviour
         {
             healthSlider.value = currentHealth;
 
-            // Opcional: Mostrar la barra solo cuando recibe daño
+            // Opcional: Mostrar la barra solo cuando recibe daï¿½o
             //if (currentHealth < maxHealth) healthBarCanvas.SetActive(true);
         }
 
@@ -51,9 +51,19 @@ public class EnemyHealth : MonoBehaviour
         }
     }
 
-    private void Die()
+private void Die()
     {
-        // Aquí puedes poner animación de muerte, drops, partículas, etc.
+        // 1. Intentar obtener el componente de Loot
+        EnemyLoot loot = GetComponent<EnemyLoot>();
+        
+        if (loot != null)
+        {
+            loot.DropRandomLoot(); // <--- Â¡SOLTAR EL OBJETO!
+        }
+
+        // 2. AnimaciÃ³n, partÃ­culas, etc...
+        
+        // 3. Destruir
         Destroy(gameObject);
     }
 }
