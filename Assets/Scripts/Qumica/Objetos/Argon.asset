@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79abe67eb4f39324ab9b54adad1bb910, type: 3}
+  m_Name: Argon
+  m_EditorClassIdentifier: Assembly-CSharp::Plantilla_Objeto
+  imagenObjeto: {fileID: -6136451970960647, guid: 1edb43b44f895b74d95afb616b494d87, type: 3}
+  imagenDescripcion: {fileID: 2960402581040015946, guid: 3d236534ef170834bbbf86afa635bcad, type: 3}
+  cantidad: 0

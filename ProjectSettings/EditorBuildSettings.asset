@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Scene 3.unity
     guid: 7c080cd91f8ae9c459c9d1b5d7cbf0c9
   - enabled: 0
-    path: Assets/Scenes/Scene 1.unity
+    path: Assets/Scenes/Inventario.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
     path: Assets/Scenes/Chemistry Table.unity

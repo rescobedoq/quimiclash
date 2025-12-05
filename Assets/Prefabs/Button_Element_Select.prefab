@@ -65,7 +65,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -148,6 +148,8 @@ GameObject:
   - component: {fileID: 5142213046171128988}
   - component: {fileID: 7874780362823477214}
   - component: {fileID: 2544939469484825652}
+  - component: {fileID: -7675148095334348208}
+  - component: {fileID: 1262889583444419876}
   m_Layer: 5
   m_Name: Button_Element_Select
   m_TagString: Untagged
@@ -203,7 +205,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 4946045755788238400, guid: 3e420038851ebfa46be9af9a1cfca425, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -257,9 +259,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6380201638079943941, guid: 23db7b36e3c748247905976181b87d76, type: 3}
-        m_TargetAssemblyTypeName: Objeto, Assembly-CSharp
-        m_MethodName: SeleccionarElementos
+      - m_Target: {fileID: -7675148095334348208}
+        m_TargetAssemblyTypeName: BotonSeleccionado, Assembly-CSharp
+        m_MethodName: CuandoLoPresiono
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -269,3 +271,29 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &-7675148095334348208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3107543970480748634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0b0bd7e6a6908b4dac8583a604bfa62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BotonSeleccionado
+  objetoOriginal: {fileID: 0}
+--- !u!114 &1262889583444419876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3107543970480748634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab90ab49c484d0946991bfbeda450768, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DescripcionSeleccionada
+  objetoOriginal: {fileID: 0}
