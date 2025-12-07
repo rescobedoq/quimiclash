@@ -457,7 +457,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 0.21960784}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1811,6 +1811,7 @@ MonoBehaviour:
   objetoDeTabla: {fileID: 3107543970480748634, guid: b7f3fe3647e01fa478a6f8f7c6ccd7ba, type: 3}
   imagenDescripcionUI: {fileID: 615062136}
   listaSeleccionados: []
+  listaSeleccionadosPlantillas: []
 --- !u!1 &1943744637
 GameObject:
   m_ObjectHideFlags: 0
@@ -2006,6 +2007,7 @@ MonoBehaviour:
   objetoDeTabla: {fileID: 3107543970480748634, guid: b7f3fe3647e01fa478a6f8f7c6ccd7ba, type: 3}
   imagenDescripcionUI: {fileID: 615062136}
   listaSeleccionados: []
+  listaSeleccionadosPlantillas: []
 --- !u!1001 &200412825269162882
 PrefabInstance:
   m_ObjectHideFlags: 0

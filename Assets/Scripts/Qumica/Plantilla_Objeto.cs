@@ -8,4 +8,5 @@ public class Plantilla_Objeto : ScriptableObject
     public Sprite imagenObjeto;
     public Sprite imagenDescripcion;
     public int cantidad;
+    public string nombreObjeto;
 }
