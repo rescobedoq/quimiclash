@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24b893aee71e7d74382609d72644c4b2, type: 3}
+  m_Name: "Molecula_\xC1cido f\xF3rmico"
+  m_EditorClassIdentifier: Assembly-CSharp::Plantilla_ObjetoMolecula
+  imagenObjetoMolecula: {fileID: -2966200626249415253, guid: d7b68b04e33fc53499a622b4e7fc3168, type: 3}
+  imagenDescripcionMolecula: {fileID: -2966200626249415253, guid: 9dbe0d4d7298d0140b709f153aa48ae4, type: 3}
+  nombreMolecula: "\xC1cido f\xF3rmico"
+  dificultad: 2
+  desbloqueada: 0
+  patronCeldasDisponibles:
+  - {x: 2, y: 1}
+  - {x: 2, y: 2}
+  - {x: 2, y: 3}
+  - {x: 2, y: 4}
+  - {x: 1, y: 2}
+  elementosEnCoordenadas:
+  - nombreElemento: Hidrogeno
+    coordenada: {x: 2, y: 1}
+  - nombreElemento: Hidrogeno
+    coordenada: {x: 2, y: 4}
+  - nombreElemento: Oxigeno
+    coordenada: {x: 2, y: 3}
+  - nombreElemento: Oxigeno
+    coordenada: {x: 1, y: 2}
+  - nombreElemento: Carbono
+    coordenada: {x: 2, y: 2}

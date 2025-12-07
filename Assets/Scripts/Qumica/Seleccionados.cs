@@ -112,7 +112,7 @@ public class Seleccionados : MonoBehaviour
             return;
         }
 
-        if (numeroMaximoObjetos < 8)
+        if (numeroMaximoObjetos < 9)
         {
             numeroMaximoObjetos++;
             listaSeleccionados.Add(obj);

@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24b893aee71e7d74382609d72644c4b2, type: 3}
+  m_Name: Molecula_Amoniaco
+  m_EditorClassIdentifier: Assembly-CSharp::Plantilla_ObjetoMolecula
+  imagenObjetoMolecula: {fileID: -4178046375966092550, guid: bc4350d812b1b604e93a133a3dfe81c6, type: 3}
+  imagenDescripcionMolecula: {fileID: -4178046375966092550, guid: 4aaaaac54c53e9e47a771b564d8bb6f5, type: 3}
+  nombreMolecula: Amoniaco
+  dificultad: 1
+  desbloqueada: 0
+  patronCeldasDisponibles:
+  - {x: 1, y: 2}
+  - {x: 1, y: 3}
+  - {x: 1, y: 4}
+  - {x: 2, y: 3}
+  elementosEnCoordenadas:
+  - nombreElemento: Nitrogeno
+    coordenada: {x: 1, y: 3}
+  - nombreElemento: Hidrogeno
+    coordenada: {x: 1, y: 2}
+  - nombreElemento: Hidrogeno
+    coordenada: {x: 1, y: 4}
+  - nombreElemento: Hidrogeno
+    coordenada: {x: 2, y: 3}
