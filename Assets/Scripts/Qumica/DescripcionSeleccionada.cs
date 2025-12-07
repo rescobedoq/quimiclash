@@ -5,15 +5,23 @@ public class DescripcionSeleccionada : MonoBehaviour
 {
     public Objeto objetoOriginal;
     private Seleccionados seleccionados;
+    private MostradorCantidad mostradorCantidad;
 
     private void Awake()
     {
         seleccionados = FindFirstObjectByType<Seleccionados>();
+        mostradorCantidad = FindFirstObjectByType<MostradorCantidad>();
     }
 
     public void MostrarDescripcion()
     {
         seleccionados.MostrarSeleccionado(this);
+
+        // Actualizar la cantidad del objeto mostrado
+        if (mostradorCantidad != null && objetoOriginal != null)
+        {
+            mostradorCantidad.MostrarCantidadDeObjeto(objetoOriginal);
+        }
     }
 
     // AÑADIR: Método para obtener la imagen de descripción del objeto
