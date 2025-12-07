@@ -200,6 +200,14 @@ public class Seleccionados : MonoBehaviour
                 Debug.Log("3. Plantilla encontrada: " + plantilla.name);
                 imagenDescripcionUI.sprite = plantilla.imagenDescripcion;
                 imagenDescripcionUI.color = Color.white;
+
+                // AÑADIDO: Actualizar la cantidad del objeto mostrado
+                MostradorCantidad mostrador = FindFirstObjectByType<MostradorCantidad>();
+                if (mostrador != null)
+                {
+                    mostrador.MostrarCantidadDePlantilla(plantilla);
+                    Debug.Log("4. Cantidad actualizada: " + plantilla.cantidad);
+                }
             }
             else
             {
