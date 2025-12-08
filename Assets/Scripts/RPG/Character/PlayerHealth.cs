@@ -1,5 +1,5 @@
 using UnityEngine;
-
+using System.Collections.Generic; 
 [RequireComponent(typeof(PlayerController2D))]
 public class PlayerHealth : MonoBehaviour
 {
@@ -27,6 +27,9 @@ public class PlayerHealth : MonoBehaviour
     public string equippedArmor;
     public Sprite characterImage;
 
+  [Header("Inventario")]
+    public List<Plantilla_Objeto> inventario = new List<Plantilla_Objeto>();
+
     private void Start()
     {
         currentHealth = maxHealth;
@@ -34,6 +37,7 @@ public class PlayerHealth : MonoBehaviour
 
         expToNextLevel = new int[maxLevel];
         expToNextLevel[1] = baseExp;
+        if (inventario == null) inventario = new List<Plantilla_Objeto>();
 
         for (int i = 2; i < expToNextLevel.Length; i++)
             expToNextLevel[i] = Mathf.FloorToInt(expToNextLevel[i - 1] * 1.05f);
@@ -72,7 +76,12 @@ public class PlayerHealth : MonoBehaviour
         if (characterLevel >= maxLevel)
             currentExperience = 0;
     }
-
+    public void AgregarObjeto(Plantilla_Objeto nuevoObjeto)
+    {
+        // Agregamos el objeto a la lista
+        inventario.Add(nuevoObjeto);
+        Debug.Log($"Se ha agregado: {nuevoObjeto.nombreObjeto} al inventario.");
+    }
     public void ChangeHealth(int amount)
     {
         // SI ES DAÑO (número negativo)

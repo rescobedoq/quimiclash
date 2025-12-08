@@ -36,6 +36,7 @@ public class InventoryUI : MonoBehaviour
         
         UpdateUI(); 
     }
+    
 
     private void Update()
     {
@@ -51,9 +52,9 @@ public class InventoryUI : MonoBehaviour
         }
     }
 
-    void UpdateUI()
+   void UpdateUI()
     {
-        Debug.Log("PUENTE: Se ha llamado a UpdateUI."); // 1. ¿Llega la señal?
+        Debug.Log("PUENTE: Se ha llamado a UpdateUI.");
 
         if (inventory == null)
         {
@@ -61,15 +62,15 @@ public class InventoryUI : MonoBehaviour
             return;
         }
 
-        Debug.Log("PUENTE: El inventario tiene " + inventory.items.Count + " objetos."); // 2. ¿Hay datos?
-        Debug.Log("PUENTE: La UI tiene " + slots.Length + " casillas (slots)."); // 3. ¿Hay botones?
+        Debug.Log("PUENTE: El inventario tiene " + inventory.items.Count + " objetos."); 
+        Debug.Log("PUENTE: La UI tiene " + slots.Length + " casillas (slots).");
 
         for (int i = 0; i < slots.Length; i++)
         {
             if (i < inventory.items.Count)
             {
-                Debug.Log("PUENTE: Pintando slot " + i + " con " + inventory.items[i].item.itemName);
-                slots[i].AddItem(inventory.items[i].item, inventory.items[i].amount);
+                // CAMBIO CLAVE: Usar el nuevo método y pasar todo el slot
+                slots[i].AddSlotData(inventory.items[i]);
             }
             else
             {

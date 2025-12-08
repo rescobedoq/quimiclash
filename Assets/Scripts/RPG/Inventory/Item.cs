@@ -1,12 +1,13 @@
+// Modifica tu Item.cs para incluir soporte químico
 using UnityEngine;
 
-// Definimos los tipos de objetos posibles
 public enum ItemType 
 { 
     Consumable, // Pociones, comida
     Weapon,     // Espadas, arcos
     Armor,      // Escudos, cascos
-    Material    // Para crafting futuro
+    Material,   // Para crafting futuro
+    Chemical    // NUEVO: Elementos químicos
 }
 
 [CreateAssetMenu(fileName = "New Item", menuName = "Inventory/Item")]
@@ -22,12 +23,27 @@ public class Item : ScriptableObject
     public bool isStackable = false;        // ¿Se pueden juntar varios en una casilla?
 
     [Header("Estadísticas / Valores")]
-    // Este valor será genérico: Daño si es arma, Curación si es poción, Defensa si es armadura
     public int value; 
+
+    // NUEVO: Referencia al Plantilla_Objeto si es un elemento químico
+    public Plantilla_Objeto chemicalElement;
+
+    // NUEVO: Método para saber si es un elemento químico
+    public bool IsChemical()
+    {
+        return itemType == ItemType.Chemical || chemicalElement != null;
+    }
 
     // Método virtual: Esto nos permitirá programar efectos únicos más adelante si queremos
     public virtual void Use()
     {
         Debug.Log("Usando objeto: " + itemName);
+        
+        // Si es químico, lo manejamos diferente
+        if (IsChemical())
+        {
+            Debug.Log($"Usando elemento químico: {itemName}");
+            // Podrías añadir lógica específica aquí
+        }
     }
 }
