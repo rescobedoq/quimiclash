@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79abe67eb4f39324ab9b54adad1bb910, type: 3}
+  m_Name: Xenon
+  m_EditorClassIdentifier: Assembly-CSharp::Plantilla_Objeto
+  imagenObjeto: {fileID: 7177754771116249098, guid: d03183d0509072446839f6fccb460b26, type: 3}
+  imagenDescripcion: {fileID: 3301111849194120939, guid: c3505a130c36cb04c8539018048e2926, type: 3}
+  cantidad: 0

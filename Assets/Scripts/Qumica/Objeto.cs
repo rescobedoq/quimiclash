@@ -8,7 +8,7 @@ using UnityEngine.EventSystems;
 public class Objeto : MonoBehaviour , IPointerEnterHandler, IPointerExitHandler 
 {
     [SerializeField] Image imagenObjeto;
-    // AÑADIR: Referencia a la imagen de descripción
+    // Aï¿½ADIR: Referencia a la imagen de descripciï¿½n
     [SerializeField] Image imagenDescripcion;
 
     private Seleccionados seleccionados;
@@ -37,7 +37,7 @@ public class Objeto : MonoBehaviour , IPointerEnterHandler, IPointerExitHandler
             imagenObjeto.color = Color.white;
         }
 
-        // AÑADIR: Configurar la imagen de descripción si existe
+        // Aï¿½ADIR: Configurar la imagen de descripciï¿½n si existe
         if (imagenDescripcion != null && datosObjeto.imagenDescripcion != null)
         {
             imagenDescripcion.sprite = datosObjeto.imagenDescripcion;
@@ -54,16 +54,29 @@ public class Objeto : MonoBehaviour , IPointerEnterHandler, IPointerExitHandler
         seleccionados.IncluirSeleccionados(gameObject);
         MostrarDescripcion();
     }
-    public void MostrarDescripcion()
+  public void MostrarDescripcion()
+{
+    // Usamos FindFirstObjectByType<DescripcionSeleccionada>() para encontrar la referencia,
+    // asumiendo que solo hay una en la escena.
+    DescripcionSeleccionada managerDescripcion = FindFirstObjectByType<DescripcionSeleccionada>();
+    
+    // Asumimos que 'this' tiene una plantilla de origen (Plantilla_Objeto)
+    Objeto objetoActual = this.GetComponent<Objeto>(); 
+
+    if (managerDescripcion != null && objetoActual != null && objetoActual.plantillaOrigen != null)
     {
-        DescripcionSeleccionada managerDescripcion = FindFirstObjectByType<DescripcionSeleccionada>();
-        if (managerDescripcion != null)
-        {
-            managerDescripcion.objetoOriginal = this;
-            managerDescripcion.MostrarDescripcion();
-        }
+        // CORRECCIÃ“N CLAVE: Asignar la Plantilla_Objeto al campo actualizado
+        managerDescripcion.plantillaAsociada = objetoActual.plantillaOrigen; 
+        
+        // Llamar al mÃ©todo del Description Manager
+        managerDescripcion.MostrarDescripcion();
     }
-    // AÑADIR: Método para obtener la descripción
+    else
+    {
+        Debug.LogWarning("[Objeto/BotonInventario] No se pudo mostrar la descripciÃ³n. Faltan referencias (DescripcionSeleccionada, Objeto, o plantillaOrigen).");
+    }
+}
+    // Aï¿½ADIR: Mï¿½todo para obtener la descripciï¿½n
     public void OnPointerEnter(PointerEventData eventData)
     {
         MostrarDescripcion();
@@ -71,7 +84,7 @@ public class Objeto : MonoBehaviour , IPointerEnterHandler, IPointerExitHandler
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        // Opcional: Ocultar descripción al salir
+        // Opcional: Ocultar descripciï¿½n al salir
     }
 
     public Sprite GetDescripcionSprite()

@@ -23,7 +23,6 @@ public class BotonSeleccionado : MonoBehaviour, IPointerEnterHandler, IPointerEx
     {
         if (descripcionComponent != null && objetoOriginal != null)
         {
-            descripcionComponent.objetoOriginal = objetoOriginal;
             descripcionComponent.MostrarDescripcion();
         }
     }

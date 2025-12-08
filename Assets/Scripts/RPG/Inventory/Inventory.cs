@@ -60,7 +60,37 @@ public class Inventory : MonoBehaviour
         
         return true;
     }
+    // Método para añadir un elemento químico
+    public bool AddElement(Plantilla_Objeto elemento, int amount = 1)
+    {
+        // 1. Buscamos si ya tenemos el elemento
+        // Nota: Asumimos que Plantilla_Objeto siempre es apilable
+        foreach (InventorySlot slot in items)
+        {
+            // Usamos la nueva propiedad elementoQuimico para comparar
+            if (slot.elementoQuimico == elemento)
+            {
+                slot.amount += amount;
+                if (onInventoryChangedCallback != null) onInventoryChangedCallback.Invoke();
+                return true;
+            }
+        }
 
+        // 2. Si no lo tenemos, verificamos espacio
+        if (items.Count >= space)
+        {
+            Debug.Log("Inventario lleno. No se puede recoger el Elemento Químico.");
+            return false;
+        }
+
+        // 3. Añadimos el nuevo Elemento Químico a la lista
+        // Usamos el nuevo constructor
+        items.Add(new InventorySlot(elemento, amount));
+        
+        if (onInventoryChangedCallback != null) onInventoryChangedCallback.Invoke();
+        
+        return true;
+    }
     // Método para eliminar/remover un objeto
     public void Remove(Item item, int amountToRemove = 1)
     {
@@ -97,12 +127,26 @@ public class Inventory : MonoBehaviour
 [System.Serializable]
 public class InventorySlot
 {
-    public Item item;
+    // Mantenemos la referencia al Item
+    public Item item; 
+    // AGREGAMOS la referencia a Plantilla_Objeto
+    public Plantilla_Objeto elementoQuimico; 
+    
     public int amount;
 
+    // Constructor para Items normales
     public InventorySlot(Item _item, int _amount)
     {
         item = _item;
+        elementoQuimico = null; // Aseguramos que el otro sea nulo
+        amount = _amount;
+    }
+
+    // Constructor NUEVO para Elementos Químicos
+    public InventorySlot(Plantilla_Objeto _elemento, int _amount)
+    {
+        elementoQuimico = _elemento;
+        item = null; // Aseguramos que el otro sea nulo
         amount = _amount;
     }
 }
