@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79abe67eb4f39324ab9b54adad1bb910, type: 3}
+  m_Name: Niquel
+  m_EditorClassIdentifier: Assembly-CSharp::Plantilla_Objeto
+  imagenObjeto: {fileID: 1685510470705091141, guid: 69abc70482ae735499d5071c116bc92b, type: 3}
+  imagenDescripcion: {fileID: -796155573255488767, guid: b5769e78fc8df9b4c96fae04d066256b, type: 3}
+  cantidad: 0
