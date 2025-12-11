@@ -1,0 +1,42 @@
+# --- CARPETAS DE UNITY (Basura generada automáticamente) ---
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+/[Mm]emoryCaptures/
+
+# --- ARCHIVOS DE VISUAL STUDIO Y IDEs (Aquí está tu error del .vs) ---
+.vs/
+.vscode/
+.idea/
+/*.csproj
+/*.unityproj
+/*.sln
+/*.suo
+/*.tmp
+/*.user
+/*.userprefs
+/*.pidb
+/*.booproj
+/*.svd
+/*.pdb
+/*.opendb
+/*.VC.db
+
+# --- SISTEMA OPERATIVO (Basura de Windows/Mac) ---
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# --- EXCEPCIONES IMPORTANTES ---
+# (Nunca ignorar estos, aunque parezcan metadatos)
+!/[Aa]ssets/**/*.meta
+!/[Pp]roject[Ss]ettings/*.asset

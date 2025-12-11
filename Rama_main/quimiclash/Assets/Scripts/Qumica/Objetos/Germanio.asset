@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79abe67eb4f39324ab9b54adad1bb910, type: 3}
+  m_Name: Germanio
+  m_EditorClassIdentifier: Assembly-CSharp::Plantilla_Objeto
+  imagenObjeto: {fileID: -3607648910683867453, guid: a3438910936973d41b3e5da9708649a7, type: 3}
+  imagenDescripcion: {fileID: 5272401415994956661, guid: bd58f643d3bc381419b09b1404544604, type: 3}
+  cantidad: 0

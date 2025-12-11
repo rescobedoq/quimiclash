@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79abe67eb4f39324ab9b54adad1bb910, type: 3}
+  m_Name: Aluminio
+  m_EditorClassIdentifier: Assembly-CSharp::Plantilla_Objeto
+  imagenObjeto: {fileID: -7703379112210886855, guid: 8fcc295f0509be24597dcd77b8405838, type: 3}
+  imagenDescripcion: {fileID: 8389134475083476877, guid: 19553675974094542ac8966d067afb4f, type: 3}
+  cantidad: 0

@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24b893aee71e7d74382609d72644c4b2, type: 3}
+  m_Name: Molecula_Fosfina
+  m_EditorClassIdentifier: Assembly-CSharp::Plantilla_ObjetoMolecula
+  imagenObjetoMolecula: {fileID: 7680820834086852892, guid: f12eed531336b8340babb509392e82b8, type: 3}
+  imagenDescripcionMolecula: {fileID: 7680820834086852892, guid: 2a2d5c46520628b4a830586c9e85891b, type: 3}
+  nombreMolecula: Fosfina
+  dificultad: 3
+  desbloqueada: 0
+  patronCeldasDisponibles:
+  - {x: 1, y: 1}
+  - {x: 1, y: 3}
+  - {x: 2, y: 2}
+  - {x: 3, y: 2}
+  elementosEnCoordenadas:
+  - nombreElemento: Hidrogeno
+    coordenada: {x: 1, y: 3}
+  - nombreElemento: Hidrogeno
+    coordenada: {x: 1, y: 1}
+  - nombreElemento: Hidrogeno
+    coordenada: {x: 3, y: 2}
+  - nombreElemento: Fosforo
+    coordenada: {x: 2, y: 2}
